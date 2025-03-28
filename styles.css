@@ -7,6 +7,7 @@ body {
     align-items: center;
     height: 100vh;
     font-family: 'Pacifico', cursive;
+    overflow: hidden; /* Mencegah scroll pada body */
 }
 
 .screen {
@@ -17,6 +18,9 @@ body {
     text-align: center;
     width: 400px; /* Meningkatkan lebar kontainer */
     height: auto; /* Mengatur tinggi otomatis untuk menampung konten */
+    margin-top: 20px; /* Menambahkan margin atas untuk memberi jarak dari atas */
+    overflow-y: auto; /* Mengatur overflow vertikal agar bisa di-scroll */
+    max-height: 80vh; /* Membatasi tinggi maksimum kontainer */
 }
 
 .hidden {
